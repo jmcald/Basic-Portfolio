@@ -14,8 +14,7 @@ body {
 .bar {
     background-color: #ffffff;
     width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .bar:after {
     content: "";
@@ -27,10 +26,7 @@ body {
     border: #dddddd 2px solid;
     clear: both;
     width: 960px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
+    margin: 20px auto;
     line-height: 2rem;
 }
 .content:after {
@@ -41,10 +37,9 @@ body {
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
-    border-bottom: #dddddd 2px solid;
-    margin: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-bottom: #dddddd 3px solid;
+    margin: 0 30px 0 30px;
+    padding: 30px 0;
     position: relative;
 }
 .name {
@@ -55,17 +50,21 @@ h1 {
     float: left;
     border: none;
 }
-a {
+img {
     float: left;
-    padding: 30px;
-    color: #777777
-}
-p {
-    padding: 30px;
+    padding: 20px;
 }
 form {
-    padding: 30px;
+    margin: 30px;
     color: #777777
+}
+#submit {
+    float: left;
+    padding: 0 20px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: 20px 0 30px 0;
+    display: auto;
 }
 .nav {
     padding: 29px;
@@ -78,5 +77,10 @@ footer {
     border-top: #4aaaa5 5px solid;
 }
 input {
-    float: left;
+    width: 100%;
+    display: inline-block;
+    padding: 4px;
+}
+#message {
+    height: 150px;
 }
