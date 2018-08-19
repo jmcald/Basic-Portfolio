@@ -74,7 +74,7 @@ a {
 
     clear: both;
 
-    width: 960px;
+    width: 768px;
 
     margin: 20px auto;
 
@@ -116,25 +116,13 @@ h1 {
 
 }
 
-img {
-
-    float: left;
-
-    padding: 20px;
-
-    width: 305px;
-
-    height:280px;
-
-}
-
 #profile {
 
     height: 250px;
 
     width: 230px;
 
-    padding: 30px;
+    margin: 30px;
 
 }
 
@@ -146,19 +134,65 @@ p {
 
 .portfolio-container{
 
+    padding: 20px;
+
     position: relative;
 
     float: left;
 
 }
 
+.portfolio-container a img {
+
+    width: 305px;
+
+    height: 250px;
+
+    border: 0 none;
+
+    opacity: 0.8;
+}
+
+.portfolio-container a div {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    right: 40px;
+
+    width: 275px;
+
+    padding: 15px;
+
+    margin-bottom: 0;
+
+    font-weight: 300;
+
+    line-height: 30px;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    background: #4aaaa5;
+
+    border-bottom: 0;
+}
+
+.port {
+
+    padding: none;
+    
+}
+
 .text-block {
 
     position: absolute;
 
-    padding: 0 36%;
+    padding: 0 34%;
 
-    margin: 20px;
+    margin: 20px auto;
 
     background-color: #4aaaa5;
 
@@ -220,28 +254,19 @@ input {
 
 @media only screen and (max-width: 640px) {
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
     .bar {
 
-        width: 640px;
+        width: 100%;
 
     }
 
     .name {
 
-        padding: 20px 180px;
+        padding: 20px auto;
+        
+        float: none;
+
+        text-align: center;
 
     }
 
@@ -254,14 +279,6 @@ input {
         margin-right: auto;
 
         padding: 0 20px 0 160px;
-
-    }
-
-    a {
-
-        padding: 0 20px;
-
-        text-decoration: none;
 
     }
 
@@ -279,9 +296,27 @@ input {
 
     }
 
-    .content{
+    .content {
 
         width: 600px;
+
+    }
+
+    .portfolio-container {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    img {
+
+        float: none;
+
+        margin-left: auto;
+
+        margin-right: auto;
 
     }
 
@@ -289,32 +324,45 @@ input {
 
 @media only screen and (max-width: 768px) {
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .bar {
+
+        width: 768px;
+
+    }
+
+    .content {
+
+        width: 768px;
+
+    }
+
+    .portfolio-container {
+
+        padding: 20px 10px;
+
+    }
+
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (min-width: 980px) {
 
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .bar {
+
+        width: 980px;
+
+    }
+
+    .content {
+
+        width: 768px;
+
+        margin: 20px 200px 20px 50px
+        
+    }
+
+    .portfolio-container {
+
+        padding: 20px 10px;
+
+    }
 }
